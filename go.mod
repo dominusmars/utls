@@ -1,4 +1,4 @@
-module gitlab.com/yawning/utls.git
+module github.com/dominusmars/utls
 
 go 1.15
 
