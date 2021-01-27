@@ -408,7 +408,7 @@ func utlsIdToSpec(id ClientHelloID) (ClientHelloSpec, error) {
 			return ClientHelloSpec{
 				TLSVersMax: VersionTLS13,
 				TLSVersMin: VersionTLS10,
-				CipherSuites: {
+				CipherSuites:  []uint16{
     				TLS_AES_128_GCM_SHA256,
     				TLS_CHACHA20_POLY1305_SHA256,
     				TLS_AES_256_GCM_SHA384,
