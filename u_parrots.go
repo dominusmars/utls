@@ -313,7 +313,7 @@ func utlsIdToSpec(id ClientHelloID) (ClientHelloSpec, error) {
 					&UtlsExtendedMasterSecretExtension{},
 					&RenegotiationInfoExtension{Renegotiation: RenegotiateOnceAsClient},
 					&SupportedCurvesExtension{Curves: []CurveID{
-						CurveID(GREASE_PLACEHOLDER), 
+						GREASE_PLACEHOLDER, 
 						X25519,
 						0x0017,
 						0x0018,
@@ -383,7 +383,7 @@ func utlsIdToSpec(id ClientHelloID) (ClientHelloSpec, error) {
 					&UtlsExtendedMasterSecretExtension{},
 					&RenegotiationInfoExtension{Renegotiation: RenegotiateOnceAsClient},
 					&SupportedCurvesExtension{Curves: []CurveID{
-						CurveID(GREASE_PLACEHOLDER),  
+						GREASE_PLACEHOLDER,  
 						X25519,
 						0x0017,
 						0x0018,
